@@ -213,12 +213,12 @@ section {
 
 table.roadmap-table {
   border: 1px solid #e6eaee;
-  border-radius: 13px;
+  border-radius: 3px;
   background-color: white; }
   table.roadmap-table thead tr {
-    border-radius: 13px; }
+    border-radius: 3px; }
     table.roadmap-table thead tr th {
-      border-radius: 10px;
+      border-radius: 3px;
       font-weight: 600;
       font-size: 12px;
       line-height: 16px;
