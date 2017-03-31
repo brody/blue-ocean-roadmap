@@ -1,3 +1,34 @@
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip();
+//     $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+//         $('.tooltip').addClass('animated fadeInUp');
+//     })
+// })
+//
+// $('[data-toggle="tooltip"]').hover(function (){
+//         $(this).next().addClass("animated shake");
+//   });
+
+
+
+
+//
+// $('#element').tooltip('show') {
+//
+// }
+
+//
+// $('.status span').tooltip({
+//      delay: { show: "5000", hide: "3000" }
+// });
+
+
+
+
 // var didScroll;
 // var lastScrollTop = 0;
 // var delta = 50;

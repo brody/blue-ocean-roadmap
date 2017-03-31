@@ -207,6 +207,9 @@ section {
   @media (min-width: 992px) {
     section {
       padding-bottom: 30px; } }
+  @media (min-width: 1200px) {
+    section {
+      padding-bottom: 50px; } }
 
 table.roadmap-table {
   border: 1px solid #e6eaee;
@@ -324,6 +327,15 @@ table.roadmap-table {
     height: 48px;
     padding: 0;
     padding-right: 16px; }
+    table.roadmap-table tbody tr td.feat-name a {
+      display: inline-block;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      color: #2378b1; }
+      table.roadmap-table tbody tr td.feat-name a:hover {
+        text-decoration: none;
+        color: #2c97de; }
     table.roadmap-table tbody tr td.feat-name span {
       align-items: center;
       display: flex;
@@ -336,6 +348,8 @@ table.roadmap-table {
       margin-top: 8px;
       border-radius: 20px;
       color: white; }
+      table.roadmap-table tbody tr td.status span:hover {
+        cursor: help; }
     table.roadmap-table tbody tr td.not-planned span {
       background: #e16070;
       background: -webkit-linear-gradient(90deg, #e16070 0%, #d83941 100%);
@@ -390,3 +404,15 @@ table.roadmap-table {
           max-width: 200px; }
         table.roadmap-table tbody tr td:last-child {
           padding-right: 24px; } }
+
+.tooltip-inner {
+  background-color: #354052;
+  max-width: 260px;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 3px;
+  font-family: lato; }
+
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before,
+.tooltip.tooltip-top .tooltip-inner::before {
+  border-top-color: #354052; }

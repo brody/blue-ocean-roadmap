@@ -383,6 +383,10 @@ section {
         // padding-top: 20px;
         padding-bottom: 30px;
     }
+    @include breakpoint(lg) {
+        // padding-top: 20px;
+        padding-bottom: 50px;
+    }
 }
 
 table.roadmap-table {
@@ -604,11 +608,30 @@ tbody {
                 padding: 0;
                 padding-right: 16px;
 
-                &.feat-name span {
+                &.feat-name {
+                  a {
+                   display: inline-block;
+                   height: 100%;
+                   align-items: center;
+                   display: flex;
+                   color: $blueberry-shade;
+                  //  &:after {
+                  //    content: "\f1fe";
+                  //    display: flex;
+                  //    font-family: "Ionicons";
+                  //  }
+                  &:hover {
+                    text-decoration: none;
+                    color: $blueberry;
+                  }
+                 }
+                  span {
                     align-items: center;
                     display: flex;
                     height: 100%;
+
                 }
+              }
 
                 &.status span {
                     height: 32px;
@@ -619,6 +642,10 @@ tbody {
                     margin-top: 8px;
                     border-radius: 20px;
                     color: $white;
+                    &:hover {
+                      cursor: help;
+                    }
+
                 }
 
                 &.not-planned span {
@@ -696,6 +723,21 @@ tbody {
             }
         }
     }
+}
+
+.tooltip-inner {
+    background-color: $black-alt;
+    max-width: 260px;
+    padding: 6px 12px;
+    color: $white; // text-align: center;
+    // background-color: #000;
+    border-radius: 3px;
+    font-family: lato;
+}
+
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before,
+.tooltip.tooltip-top .tooltip-inner::before {
+    border-top-color: $black-alt;
 }
 
 // .socials {
